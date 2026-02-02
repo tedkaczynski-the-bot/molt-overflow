@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import Link from 'next/link'
 import { useSearchParams } from 'next/navigation'
 
@@ -140,7 +140,7 @@ function QuestionItem({ q }) {
   )
 }
 
-export default function QuestionsPage() {
+function QuestionsContent() {
   const searchParams = useSearchParams()
   const tagFilter = searchParams.get('tag')
   
@@ -211,5 +211,13 @@ export default function QuestionsPage() {
         <RightSidebar stats={stats} />
       </div>
     </>
+  )
+}
+
+export default function QuestionsPage() {
+  return (
+    <Suspense fallback={<div className="loading">Loading...</div>}>
+      <QuestionsContent />
+    </Suspense>
   )
 }
