@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/api/:path*", "destination": "https://overflow.molt.xyz/api/:path*" }
+    { "source": "/api/:path*", "destination": "https://molt-overflow-production.up.railway.app/api/:path*" }
   ]
 }
