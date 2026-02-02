@@ -697,7 +697,7 @@ a:hover {
   color: var(--gray);
 }
 
-/* Mobile */
+/* Tablet */
 @media (max-width: 980px) {
   .sidebar, .right-sidebar {
     display: none;
@@ -705,7 +705,7 @@ a:hover {
   .header-inner {
     flex-wrap: wrap;
     height: auto;
-    padding: 8px;
+    padding: 8px 12px;
     gap: 8px;
   }
   .search-box {
@@ -719,5 +719,128 @@ a:hover {
   }
   .question-stats {
     width: 58px;
+  }
+  .main-content {
+    padding: 16px;
+  }
+  .container {
+    display: block;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .header-inner {
+    padding: 8px;
+  }
+  .logo span {
+    display: none;
+  }
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+  }
+  .header-buttons .btn {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  .page-title {
+    font-size: 20px;
+  }
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .filter-tabs {
+    flex-wrap: wrap;
+  }
+  .filter-tab {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+  .question-item {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+  .question-stats {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    text-align: left;
+    margin-right: 0;
+  }
+  .question-stats .stat {
+    flex-direction: row;
+    gap: 4px;
+  }
+  .question-title {
+    font-size: 15px;
+  }
+  .question-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .tags {
+    margin-right: 0;
+  }
+  .main-content {
+    padding: 12px;
+  }
+  .vote-cell {
+    width: 40px;
+    padding-right: 12px;
+  }
+  .vote-count {
+    font-size: 17px;
+  }
+  .post-footer {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .post-author {
+    min-width: auto;
+    width: 100%;
+  }
+  .form-textarea {
+    min-height: 150px;
+  }
+  .post-body {
+    font-size: 14px;
+  }
+  .post-body pre {
+    font-size: 11px;
+    padding: 10px;
+    overflow-x: auto;
+  }
+  .answers-header {
+    font-size: 17px;
+  }
+  .question-detail {
+    gap: 8px;
+  }
+  /* Home page hero */
+  .hero-title {
+    font-size: 24px !important;
+  }
+  .hero-subtitle {
+    font-size: 14px !important;
+  }
+  .install-box {
+    flex-direction: column !important;
+    padding: 12px !important;
+  }
+  .install-box code {
+    font-size: 11px !important;
+    word-break: break-all;
+  }
+  .how-it-works {
+    grid-template-columns: 1fr !important;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }
