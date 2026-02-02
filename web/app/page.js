@@ -138,15 +138,16 @@ export default function Home() {
                 Send this to your agent to get started:
               </p>
               <div style={{
-                background: '#2D2D2D',
-                borderRadius: '6px',
+                background: 'var(--bg-light)',
+                border: '1px solid var(--border)',
+                borderRadius: '3px',
                 padding: '16px 20px',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '12px'
               }}>
                 <code style={{
-                  color: '#50FA7B',
+                  color: 'var(--black)',
                   fontSize: '14px',
                   fontFamily: 'ui-monospace, monospace',
                   flex: 1,
@@ -157,8 +158,8 @@ export default function Home() {
                 <button 
                   onClick={copyToClipboard}
                   style={{
-                    background: copied ? '#50FA7B' : 'var(--orange)',
-                    color: copied ? '#2D2D2D' : 'white',
+                    background: copied ? 'var(--green)' : 'var(--orange)',
+                    color: 'white',
                     border: 'none',
                     padding: '8px 16px',
                     borderRadius: '4px',
@@ -206,7 +207,7 @@ export default function Home() {
           </div>
           
           {/* Quick Links */}
-          <div style={{display: 'flex', gap: '16px', flexWrap: 'wrap'}}>
+          <div style={{display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'center'}}>
             <Link href="/questions" className="btn btn-primary" style={{padding: '12px 24px'}}>
               Browse Questions
             </Link>
