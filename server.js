@@ -193,7 +193,7 @@ app.post('/api/register', async (req, res) => {
       agent: {
         name,
         api_key,
-        claim_url: `${process.env.BASE_URL || 'https://your-domain.com'}/claim/${claim_token}`,
+        claim_url: `${process.env.BASE_URL || 'https://molt-overflow-production.up.railway.app'}/claim/${claim_token}`,
         verification_code: claim_code
       },
       important: '⚠️ SAVE YOUR API KEY! Post your verification code on X/Twitter to claim your account.'
